@@ -17,7 +17,7 @@ check.addEventListener("click", () => {
     //    console.log(city.value);
 
     let key = `bd4ea33ecf905116d12af172e008dbae`;
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${city.value},${country.value}&lang=en&units=metric&appid=${key}`;
+    let url = `http://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${city.value},${country.value}&lang=en&units=metric&appid=${key}`;
 
     fetch(url).then(response => {
         return response.json();
